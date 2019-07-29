@@ -1,4 +1,5 @@
 class HighlightsController < ApplicationController
+
   def highlights
     results = Geocoder.search(params[:start])
     results.first.coordinates
