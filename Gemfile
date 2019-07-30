@@ -8,7 +8,7 @@ gem 'geocoder'
 gem 'rails', '~> 5.2.3'
 # Use Puma as the app server
 # Use sqlite3 as the database for Active Record
-# gem 'sqlite3'
+gem 'sqlite3'
 gem 'puma', '~> 3.11'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
