@@ -6,7 +6,7 @@ class Api::V1::PointOfInterestsController < ActionController::API
     finish = Geocoder.search(params[:finish]).first.coordinates
     geo_center = Geocoder::Calculations.geographic_center([start, finish])
     distance = Geocoder::Calculations.distance_between(start, finish)
-    @poi = PointOfInterest.near(geo_center, distance)
+    @poi = PointOfInterest.near(geo_center, distance / 2)
   end
 
   def closest_highlight
